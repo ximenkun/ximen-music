@@ -1,0 +1,82 @@
+.ant-modal {
+  position: absolute;
+  right: 10%;
+  top: 60px;
+}
+.login {
+  .login-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  .nickname {
+    padding: 0 8px;
+  }
+}
+.qr-container {
+  text-align: center;
+  padding-top: 20px;
+  .qr-code {
+    margin: 20px auto;
+  }
+  .qr-desc {
+    margin-top: 10px;
+  }
+  .change-login-mode {
+    margin-top: 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title-s {
+    margin: 10px 0 18px;
+    font-size: 14px;
+    color: #ccc;
+  }
+}
+
+.phone-container {
+  .l-t-box {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    .qr {
+      width: 0;
+      height: 0;
+      border-top: 50px solid skyblue;
+      border-right: 50px solid transparent;
+    }
+    .popover {
+      width: 120px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 14px;
+      height: 30px;
+      line-height: 30px;
+      color: white;
+      background-color: #ccc;
+    }
+  }
+  .p-body {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .p-p-box {
+    // display: flex;
+    font-size: 12px;
+    span {
+      color: #3272f5;
+    }
+  }
+  .ant-btn-primary {
+    border: none;
+    width: 200px;
+    background-color: red;
+    margin: 30px 30px 0;
+  }
+}

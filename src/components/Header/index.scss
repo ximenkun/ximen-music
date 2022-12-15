@@ -1,0 +1,54 @@
+.header-container {
+  // background-color: #ff0000;
+  height: 60px;
+  color: white;
+  -webkit-app-region: drag;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  justify-content: space-between;
+  .left-icon {
+    .logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  }
+  .right-box {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-app-region: no-drag;
+    .right-box-icon {
+      display: flex;
+      align-items: center;
+      width: 100px;
+      justify-content: space-between;
+
+      .skin-peeler {
+      }
+      .right-icon {
+        width: 80px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.drop-box {
+  width: 290px;
+  height: 150px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+  }
+}

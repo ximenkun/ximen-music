@@ -1,0 +1,21 @@
+.swiper-container {
+  width: 80%;
+  height: 100%;
+}
+
+.main-swiper {
+  .slick-dots {
+    bottom: 10px;
+  }
+}
+.slick-prev.slick-prev {
+  left: 10px;
+  z-index: 100;
+}
+
+.slick-next.slick-next {
+  right: 10px;
+}
+.slick-list {
+  height: 200px;
+}

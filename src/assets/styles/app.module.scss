@@ -1,0 +1,12 @@
+.app {
+  .appHeader {
+    background-color: #b62222;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    -webkit-app-region: drag;
+  }
+}
