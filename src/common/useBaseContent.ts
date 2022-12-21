@@ -4,9 +4,10 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-09-07 18:28:03
- * @LastEditTime: 2022-09-07 18:36:08
+ * @LastEditTime: 2022-12-20 11:00:20
  */
 import { createContext, useContext, useState } from 'react'
+import useGlobalPlay from './useGlobalPlay'
 type BaseContextProps = {
   isModalOpen: boolean
   setModalOpen(v: boolean): void
@@ -20,6 +21,7 @@ const initContext = () => {
   return {
     isModalOpen,
     setModalOpen,
+    ...useGlobalPlay(),
   }
 }
 export default initContext

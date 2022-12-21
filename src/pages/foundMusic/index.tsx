@@ -12,8 +12,8 @@ import { getBanner, getPersonalized, getNewsong } from '@/servers/api'
 import { CaretRightOutlined, PlayCircleOutlined, PlayCircleTwoTone, RightOutlined } from '@ant-design/icons'
 import { Tabs } from 'antd'
 import React, { useEffect, useState } from 'react'
-import './index.scss'
 import { useNavigate } from 'react-router-dom'
+import './index.scss'
 
 const { TabPane } = Tabs
 const FoundMusic: React.FC = () => {
@@ -103,6 +103,7 @@ const FoundMusic: React.FC = () => {
       <Tabs defaultActiveKey="1">
         <TabPane tab="个性推荐" key="1">
           <div className="f-recommend-box">
+
             <div className="swiper-box">
               {' '}
               <BannerSwiper></BannerSwiper>{' '}

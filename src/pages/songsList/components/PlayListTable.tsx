@@ -4,14 +4,17 @@
  * @params:
  * @FilePath: \electron-vite-react-main\src\pages\songsList\components\PlayListTable.tsx
  * @Date: 2022-09-27 16:02:46
- * @Descripttion: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @Descripttion: 表格列表
  */
+import { useBaseContext } from '@/common/useBaseContent'
+import SongTimeBar from './SongTimeBar'
 type Iprops = {
   data: any
 }
 const PlayListTable: React.FC<Iprops> = ({ data }) => {
+  const { setCurrrentSongID }: any = useBaseContext()
   return (
-    <div>
+    <div className="m-t-20">
       <table className="play-list-table">
         <thead>
           <tr>
@@ -24,14 +27,21 @@ const PlayListTable: React.FC<Iprops> = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.map((item, index) => (
-            <tr key={item.id}>
+          {data.map((item: any, index: any) => (
+            <tr
+              key={item.id}
+              onDoubleClick={() => {
+                setCurrrentSongID(item.id)
+              }}
+            >
               <td>{index + 1}</td>
               <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
+              <td>{item.name}</td>
+              <td>{item.ar?.[0].name}</td>
+              <td>{item.al.name}</td>
+              <td>
+                <SongTimeBar dt={item.dt} />
+              </td>
             </tr>
           ))}
         </tbody>

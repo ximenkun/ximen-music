@@ -4,14 +4,14 @@
  * @Descripttion:  登录
  * @params:
  * @Date: 2022-09-07 18:06:12
- * @LastEditTime: 2022-10-13 14:03:41
+ * @LastEditTime: 2022-12-16 13:39:38
  */
 import { useBaseContext } from '@/common/useBaseContent'
 import { checkQrLogin, getCreateQr, getLoginQrKey } from '@/servers/login'
 import { AppleOutlined, RightOutlined } from '@ant-design/icons'
 import { Button, Checkbox, Form, Input, Modal, Popover } from 'antd'
 import { FC, ReactElement, useEffect, useRef, useState } from 'react'
-interface IProps {}
+interface IProps { }
 import './login.scss'
 import QRCode from 'qrcode.react'
 import { phoneNumberCheck } from '@/utils/verify'
@@ -216,7 +216,7 @@ const Login: FC<IProps> = (): ReactElement => {
           </span>
         )}
       </div>
-      <Modal visible={isModalOpen} onOk={handleOk} onCancel={handleCancel} width={300} footer={null} bodyStyle={{ minHeight: '350px' }}>
+      <Modal open={isModalOpen} onOk={handleOk} onCancel={handleCancel} width={300} footer={null} bodyStyle={{ minHeight: '350px' }}>
         {loginMode === 1 ? <QrLoginBox></QrLoginBox> : <PhoneLoginBox></PhoneLoginBox>}
       </Modal>
     </div>

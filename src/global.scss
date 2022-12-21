@@ -1,0 +1,29 @@
+// 全局的样式
+.m-l-20{
+  margin-left: 20px;
+}
+.m-t-20{
+  margin-top: 20px;
+}
+.f-s-12{
+  font-size: 12px;
+}
+
+.color{
+  color: #878181;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+// 全局修改组件的ui样式
+.mantine-123gri0[data-active] {
+  border-color: #e62257;
+}
+
+

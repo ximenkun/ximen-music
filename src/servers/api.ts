@@ -4,7 +4,7 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-08-25 16:34:46
- * @LastEditTime: 2022-09-27 16:18:36
+ * @LastEditTime: 2022-12-19 15:34:12
  */
 import httpRequest from '@/utils/request'
 
@@ -44,6 +44,23 @@ export const getSongListAllMusic = (id: any) => {
   return httpRequest({
     method: 'get',
     url: '/playlist/track/all',
-    params: { id, limit: 1000 },
+    params: { id, limit: 48 },
+  })
+}
+
+// 音乐的详情描述
+export const getSongListDetails = (id: string) => {
+  return httpRequest({
+    url: '/playlist/detail',
+    params: { id },
+  })
+}
+
+// 获取评论列表
+export const getComment = ({ id, type = 'playlist', limit = 30, offset = 0 }: any) => {
+  return httpRequest({
+    method: 'get',
+    url: `/comment/${type}`,
+    params: { id, limit, offset },
   })
 }

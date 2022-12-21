@@ -1,25 +1,18 @@
+
 /*
  * @Author: hekun
  * @LastEdit: hekun
- * @Descripttion:
+ * @Descripttion: APP 主界面
  * @params:
  * @Date: 2022-08-24 15:51:27
- * @LastEditTime: 2022-09-08 10:04:09
+ * @LastEditTime: 2022-12-19 18:25:56
  */
-/*
- * @Author: hekun
- * @LastEdit: hekun
- * @Descripttion:
- * @params:
- * @Date: 2022-08-24 15:51:27
- * @LastEditTime: 2022-08-26 14:48:35
- */
-import { useState } from 'react'
 import 'antd/dist/antd.css'
 import Header from './components/Header'
-import Footer from './components/Footer'
 import Layout from './components/Layout'
 import BaseContext from './common/BaseContext'
+import "./global.scss"
+import Player from './components/Player/Player'
 
 const App: React.FC = () => {
   return (
@@ -27,7 +20,7 @@ const App: React.FC = () => {
       <BaseContext>
         <Header></Header>
         <Layout></Layout>
-        <Footer></Footer>
+        <Player></Player>
       </BaseContext>
     </div>
   )

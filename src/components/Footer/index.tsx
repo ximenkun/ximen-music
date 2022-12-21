@@ -4,7 +4,7 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-08-25 11:25:10
- * @LastEditTime: 2022-08-29 09:58:23
+ * @LastEditTime: 2022-12-16 13:42:45
  */
 import {
   CloudOutlined,
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
                 <div key={item.label}>
                   {playMode === index ? (
                     <div style={{ fontSize: '18px' }}>
-                      <Popover content={item.label} trigger="click" visible={visible} onVisibleChange={handleVisibleChange}>
+                      <Popover content={item.label} trigger="click" open={visible} onOpenChange={handleVisibleChange}>
                         <i
                           className={`iconfont  ${item.icon}`}
                           onClick={() => {

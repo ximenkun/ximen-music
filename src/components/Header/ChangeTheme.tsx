@@ -4,7 +4,7 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-08-25 17:31:05
- * @LastEditTime: 2022-08-25 18:31:57
+ * @LastEditTime: 2022-12-16 13:41:36
  */
 
 import { SkinTwoTone } from '@ant-design/icons'
@@ -43,7 +43,7 @@ const ChangeTheme: React.FC = () => {
     })
     localStorage.setItem('color', localColor)
   }
-  const menu = (
+  const menu: any = (
     <div className="drop-box">
       {colorList.map((item, index) => (
         <div
@@ -60,7 +60,7 @@ const ChangeTheme: React.FC = () => {
   )
 
   return (
-    <Dropdown overlay={menu} key="dropdown">
+    <Dropdown menu={menu} key="dropdown">
       <SkinTwoTone />
     </Dropdown>
   )
