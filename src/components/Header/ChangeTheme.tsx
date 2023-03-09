@@ -4,7 +4,7 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-08-25 17:31:05
- * @LastEditTime: 2022-12-16 13:41:36
+ * @LastEditTime: 2023-03-08 14:34:37
  */
 
 import { SkinTwoTone } from '@ant-design/icons'
@@ -29,7 +29,6 @@ const ChangeTheme: React.FC = () => {
   const onColorChange = (color: string) => {
     setCurrentColor(color)
     const headerDom: any = document.getElementsByClassName('header-container')[0]
-    console.log(headerDom)
     headerDom.style.setProperty('background-color', color, 'important') // 改变头部背景颜色
     // 改变整体的主题颜色
     ConfigProvider.config({

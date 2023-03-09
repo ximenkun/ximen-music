@@ -7,12 +7,14 @@
  * @Descripttion: 表格列表
  */
 import { useBaseContext } from '@/common/useBaseContent'
+import usePlayer from '@/components/Player/usePlayer'
 import SongTimeBar from './SongTimeBar'
 type Iprops = {
   data: any
 }
 const PlayListTable: React.FC<Iprops> = ({ data }) => {
   const { setCurrrentSongID }: any = useBaseContext()
+
   return (
     <div className="m-t-20">
       <table className="play-list-table">

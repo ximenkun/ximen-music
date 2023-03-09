@@ -4,7 +4,7 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-08-26 15:19:58
- * @LastEditTime: 2022-09-09 17:20:51
+ * @LastEditTime: 2023-03-08 14:35:29
  */
 
 import Swiper from '@/components/Swiper'
@@ -68,7 +68,6 @@ const FoundMusic: React.FC = () => {
                 className="f-s-box-item"
                 key={item.name}
                 onClick={() => {
-                  console.log(item)
                   navigate(`/songsList?id=${item.id}`)
                 }}
               >
@@ -103,7 +102,6 @@ const FoundMusic: React.FC = () => {
       <Tabs defaultActiveKey="1">
         <TabPane tab="个性推荐" key="1">
           <div className="f-recommend-box">
-
             <div className="swiper-box">
               {' '}
               <BannerSwiper></BannerSwiper>{' '}

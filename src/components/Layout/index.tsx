@@ -4,7 +4,7 @@
  * @Descripttion:
  * @params:
  * @Date: 2022-08-26 14:39:11
- * @LastEditTime: 2022-09-09 16:58:46
+ * @LastEditTime: 2023-03-08 14:35:24
  */
 import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons'
 import { Layout, Menu } from 'antd'
@@ -36,7 +36,6 @@ const LayoutApp: React.FC = () => {
           })}
           <button
             onClick={() => {
-              console.log('api')
               api.send('openDevtools')
             }}
           >

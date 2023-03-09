@@ -12,10 +12,6 @@ import { useState } from 'react'
 export default function useGlobalPlay() {
   const [isPlay, setIsPlay] = useState(false) // 是否在播放
   const [currrentSongID, setCurrrentSongID] = useState<string>('') // 当前播放的歌曲id
-  const [currentSong, setCurrentSong] = useLocalStorage<any>({
-    key: 'currentSong',
-    defaultValue: {} as any,
-  }) // 当前播放的歌曲
   const [lyric, setLyric] = useLocalStorage<any[]>({
     key: 'lyric',
     defaultValue: [],
@@ -34,8 +30,6 @@ export default function useGlobalPlay() {
     setCurrrentSongID,
     isPlay,
     setIsPlay,
-    currentSong,
-    setCurrentSong,
     setLyric,
     lyric,
     playDetailVisible,
